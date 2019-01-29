@@ -1,0 +1,30 @@
+{
+  "id_name": "libraryofcongress",
+  "name": "Library of Congress search",
+  "category" : "Add data",
+  "icon" : "search",
+  "description" : "Search the Library of Congress for records of documents",
+  "loads_data": true,
+  "help_url": "modules/scrape/library-of-congress",
+  "parameters": [
+    {
+      "name": "Keywords",
+      "id_name" : "q",
+      "type": "string",
+      "default": "",
+      "placeholder":"Keywords"
+    },
+    {
+      "name": "Collection",
+      "id_name" : "partof",
+      "type": "menu",
+      "menu_items": "Entire library|Bills|House bills|Senate bills|House resolutions|Senate resolutions|Federal register",
+      "default": 0
+    },
+    {
+      "name": "Search",
+      "id_name" : "version_select",
+      "type": "custom"
+    }
+  ]
+}
