@@ -1,8 +1,8 @@
 {
   "id_name": "libraryofcongress",
-  "name": "Library of Congress search",
+  "name": "Library of Congress",
   "category" : "Add data",
-  "icon" : "search",
+  "icon" : "loc",
   "description" : "Search the Library of Congress for records of documents",
   "loads_data": true,
   "help_url": "modules/scrape/library-of-congress",
