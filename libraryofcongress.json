@@ -1,7 +1,7 @@
 {
   "id_name": "libraryofcongress",
   "name": "Library of Congress",
-  "category" : "Add data",
+  "category" : "other",
   "icon" : "loc",
   "description" : "Search the Library of Congress for records of documents",
   "loads_data": true,
