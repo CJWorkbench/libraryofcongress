@@ -74,7 +74,6 @@ async def _fetch_paginated(q: str, fa: str):
                 **qsparams,
                 'sp': len(pages) + 1,  # page number, 1-based
             })
-            print(repr(url))
             async with session.get(url, raise_for_status=True) as response:
                 data = await response.json()
                 records = data['results']
@@ -89,7 +88,7 @@ async def _fetch_paginated(q: str, fa: str):
                 if n_fetched >= n_total or n_fetched >= MaxNRecords:
                     break
 
-    return pd.concat(pages)
+    return pd.concat(pages, ignore_index=True)
 
 
 async def fetch(params):
