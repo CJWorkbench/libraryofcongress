@@ -118,3 +118,30 @@ async def fetch(params):
             'HTTP error from Library of Congress server: %(code)d %(message)s'
             % {'code': err.code, 'message': err.message}
         )
+
+
+def _migrate_params_v0_to_v1(params):
+    """
+    v0: partof indexes into "|bills|house bills|senate bills|house resolutions
+                             |senate resolutions|federal register"
+
+    v1: values themselves.
+    """
+    return {
+        **params,
+        'partof': [
+            '',
+            'bills',
+            'house bills',
+            'senate bills',
+            'house resolutions',
+            'senate resolutions',
+            'federal register',
+        ][params['partof']]
+    }
+
+
+def migrate_params(params):
+    if isinstance(params['partof'], int):
+        params = _migrate_params_v0_to_v1(params)
+    return params
