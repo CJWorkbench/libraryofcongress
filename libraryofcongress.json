@@ -18,7 +18,7 @@
       "name": "Collection",
       "id_name" : "partof",
       "type": "menu",
-      "default": "",
+      "default": "entire_library",
       "options": [
         { "value": "entire_library", "label": "Entire library" },
         { "value": "bills", "label": "Bills" },
