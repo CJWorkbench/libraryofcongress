@@ -8,7 +8,7 @@ from libraryofcongress import fetch, migrate_params
 class FetchTest(unittest.TestCase):
     def test_integration(self):
         async def go():
-            result = await fetch({'q': 'football', 'partof': 0})
+            result = await fetch({'q': 'football', 'partof': 'entire_library'})
             print(repr(result))
 
         loop = asyncio.new_event_loop()
@@ -24,7 +24,7 @@ class MigrateParamsTest(unittest.TestCase):
             'version_select': '',
         }), {
             'q': 'baseball',
-            'partof': '',
+            'partof': 'entire_library',
             'version_select': '',
         })
 
@@ -35,17 +35,17 @@ class MigrateParamsTest(unittest.TestCase):
             'version_select': '',
         }), {
             'q': 'baseball',
-            'partof': 'house bills',
+            'partof': 'house_bills',
             'version_select': '',
         })
 
     def test_v1(self):
         self.assertEqual(migrate_params({
             'q': 'baseball',
-            'partof': 'house bills',
+            'partof': 'house_bills',
             'version_select': '',
         }), {
             'q': 'baseball',
-            'partof': 'house bills',
+            'partof': 'house_bills',
             'version_select': '',
         })

@@ -11,21 +11,6 @@ PerPage = 150  # highest allowed value, says result.pagination.perpage_options
 MaxNRecords = PerPage * 5  # because we don't want jobs running forever
 
 
-Partofs = [
-    # Be careful: keep in sync with JSON
-    # If you reorder or delete, you'll need a migrate_params().
-    #
-    # Full list: https://www.loc.gov/search/index/partof/
-    None,
-    'bills',
-    'house bills',
-    'senate bills',
-    'house resolutions',
-    'senate resolutions',
-    'federal register',
-]
-
-
 class Column:
     def __init__(self, key, name, parse_value=str):
         self.key = key
@@ -98,14 +83,11 @@ async def fetch(params):
         return (None, 'Missing search phrase')
 
     facets = []
-
-    try:
-        partof = Partofs[params['partof']]
-        if partof:
-            facets.append(f'partof:{partof}')
-    except IndexError:
-        pass
-
+    if params['partof'] != 'entire_library':
+        # menu values are all snake-case strings, like 'house_bills'. Convert
+        # to what library of congress uses: spaces in names, like 'house bills'
+        partof = params['partof'].replace('_', ' ')
+        facets.append(f"partof:{partof}")
     if facets:
         fa = '|'.join(facets)
     else:
@@ -122,21 +104,21 @@ async def fetch(params):
 
 def _migrate_params_v0_to_v1(params):
     """
-    v0: partof indexes into "|bills|house bills|senate bills|house resolutions
-                             |senate resolutions|federal register"
+    v0: partof indexes into "|bills|house_bills|senate_bills|house_resolutions
+                             |senate_resolutions|federal_register"
 
     v1: values themselves.
     """
     return {
         **params,
         'partof': [
-            '',
+            'entire_library',
             'bills',
-            'house bills',
-            'senate bills',
-            'house resolutions',
-            'senate resolutions',
-            'federal register',
+            'house_bills',
+            'senate_bills',
+            'house_resolutions',
+            'senate_resolutions',
+            'federal_register',
         ][params['partof']]
     }
 

@@ -18,8 +18,16 @@
       "name": "Collection",
       "id_name" : "partof",
       "type": "menu",
-      "menu_items": "Entire library|Bills|House bills|Senate bills|House resolutions|Senate resolutions|Federal register",
-      "default": 0
+      "default": "",
+      "options": [
+        { "value": "entire_library", "label": "Entire library" },
+        { "value": "bills", "label": "Bills" },
+        { "value": "house_bills", "label": "House bills" },
+        { "value": "senate_bills", "label": "Senate bills" },
+        { "value": "house_resolutions", "label": "House resolutions" },
+        { "value": "senate_resolutions", "label": "Senate resolutions" },
+        { "value": "federal_register", "label": "Federal register" }
+      ]
     },
     {
       "name": "Search",
