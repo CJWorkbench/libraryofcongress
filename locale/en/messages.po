@@ -1,0 +1,60 @@
+# English translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-01-07 06:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+msgid "_spec.name"
+msgstr "Library of Congress"
+
+msgid "_spec.description"
+msgstr "Search the Library of Congress for records of documents"
+
+msgid "_spec.parameters.q.name"
+msgstr "Keywords"
+
+msgid "_spec.parameters.q.placeholder"
+msgstr "Keywords"
+
+msgid "_spec.parameters.partof.name"
+msgstr "Collection"
+
+msgid "_spec.parameters.partof.options.entire_library.label"
+msgstr "Entire library"
+
+msgid "_spec.parameters.partof.options.bills.label"
+msgstr "Bills"
+
+msgid "_spec.parameters.partof.options.house_bills.label"
+msgstr "House bills"
+
+msgid "_spec.parameters.partof.options.senate_bills.label"
+msgstr "Senate bills"
+
+msgid "_spec.parameters.partof.options.house_resolutions.label"
+msgstr "House resolutions"
+
+msgid "_spec.parameters.partof.options.senate_resolutions.label"
+msgstr "Senate resolutions"
+
+msgid "_spec.parameters.partof.options.federal_register.label"
+msgstr "Federal register"
+
+msgid "_spec.parameters.version_select.name"
+msgstr "Search"
+
