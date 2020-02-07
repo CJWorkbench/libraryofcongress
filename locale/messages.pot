@@ -1,67 +1,61 @@
-# Greek translations for PROJECT.
-# Copyright (C) 2020 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
-#
-#, fuzzy
-msgid ""
-msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-02-07 17:20+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: el\n"
-"Language-Team: el <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
-
+#. default-message: Library of Congress
 msgid "_spec.name"
 msgstr ""
 
+#. default-message: Search the Library of Congress for records of documents
 msgid "_spec.description"
 msgstr ""
 
+#. default-message: Keywords
 msgid "_spec.parameters.q.name"
 msgstr ""
 
+#. default-message: Keywords
 msgid "_spec.parameters.q.placeholder"
 msgstr ""
 
+#. default-message: Collection
 msgid "_spec.parameters.partof.name"
 msgstr ""
 
+#. default-message: Entire library
 msgid "_spec.parameters.partof.options.entire_library.label"
 msgstr ""
 
+#. default-message: Bills
 msgid "_spec.parameters.partof.options.bills.label"
 msgstr ""
 
+#. default-message: House bills
 msgid "_spec.parameters.partof.options.house_bills.label"
 msgstr ""
 
+#. default-message: Senate bills
 msgid "_spec.parameters.partof.options.senate_bills.label"
 msgstr ""
 
+#. default-message: House resolutions
 msgid "_spec.parameters.partof.options.house_resolutions.label"
 msgstr ""
 
+#. default-message: Senate resolutions
 msgid "_spec.parameters.partof.options.senate_resolutions.label"
 msgstr ""
 
+#. default-message: Federal register
 msgid "_spec.parameters.partof.options.federal_register.label"
 msgstr ""
 
+#. default-message: Search
 msgid "_spec.parameters.version_select.name"
 msgstr ""
 
+#. default-message: Missing search phrase
 #: libraryofcongress.py:84
 msgid "badParam.q.missing"
 msgstr ""
 
+#. default-message: HTTP error from Library of Congress server: {code} {message}
 #: libraryofcongress.py:100
 msgid "error.http.general"
 msgstr ""

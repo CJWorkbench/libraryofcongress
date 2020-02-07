@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-07 06:45+0000\n"
+"POT-Creation-Date: 2020-02-07 17:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.7.0\n"
+"Generated-By: Babel 2.8.0\n"
 
 msgid "_spec.name"
 msgstr "Library of Congress"
@@ -57,4 +57,12 @@ msgstr "Federal register"
 
 msgid "_spec.parameters.version_select.name"
 msgstr "Search"
+
+#: libraryofcongress.py:84
+msgid "badParam.q.missing"
+msgstr "Missing search phrase"
+
+#: libraryofcongress.py:100
+msgid "error.http.general"
+msgstr "HTTP error from Library of Congress server: {code} {message}"
 
