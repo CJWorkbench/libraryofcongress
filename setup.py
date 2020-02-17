@@ -11,5 +11,5 @@ setup(
     url='https://github.com/CJWorkbench/libraryofcongress',
     packages=[''],
     py_modules=['libraryofcongress'],
-    install_requires=['pandas==0.24.2', 'aiohttp', "cjwmodule==*"]
+    install_requires=['pandas==0.24.2', 'aiohttp', "cjwmodule>=1.3.0"]
 )
