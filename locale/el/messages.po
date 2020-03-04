@@ -60,9 +60,9 @@ msgstr "Αναζήτηση"
 
 #: libraryofcongress.py:84
 msgid "badParam.q.missing"
-msgstr ""
+msgstr "Δεν υπάρχει φράση αναζήτησης"
 
 #: libraryofcongress.py:100
 msgid "error.http.general"
-msgstr ""
+msgstr "Σφάλμα HTTP από τον διακομιστή της Βιβλιοθήκης του Κογκρέσου: {code} {message}"
 
