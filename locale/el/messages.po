@@ -1,0 +1,68 @@
+# Greek translations for PROJECT.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-02-18 15:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: el\n"
+"Language-Team: el <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+msgid "_spec.name"
+msgstr "Βιβλιοθήκη του Κογκρέσου"
+
+msgid "_spec.description"
+msgstr "Αναζήτηση στη Βιβλιοθήκη του Κογκρέσου για αρχεία εγγράφων"
+
+msgid "_spec.parameters.q.name"
+msgstr "Λέξεις-κλειδιά"
+
+msgid "_spec.parameters.q.placeholder"
+msgstr "Λέξεις-κλειδιά"
+
+msgid "_spec.parameters.partof.name"
+msgstr "Συλλογή"
+
+msgid "_spec.parameters.partof.options.entire_library.label"
+msgstr "Ολόκληρη η βιβλιοθήκη"
+
+msgid "_spec.parameters.partof.options.bills.label"
+msgstr "Νομοσχέδια"
+
+msgid "_spec.parameters.partof.options.house_bills.label"
+msgstr "Νομοσχέδια της Βουλής Αντιπροσώπων"
+
+msgid "_spec.parameters.partof.options.senate_bills.label"
+msgstr "Νομοσχέδια της Γερουσίας"
+
+msgid "_spec.parameters.partof.options.house_resolutions.label"
+msgstr "Ψηφίσματα της Βουλής Αντιπροσώπων"
+
+msgid "_spec.parameters.partof.options.senate_resolutions.label"
+msgstr "Ψηφίσματα της Γερουσίας"
+
+msgid "_spec.parameters.partof.options.federal_register.label"
+msgstr "Ομοσπονδιακό Μητρώο"
+
+msgid "_spec.parameters.version_select.name"
+msgstr "Αναζήτηση"
+
+#: libraryofcongress.py:84
+msgid "badParam.q.missing"
+msgstr "Δεν υπάρχει φράση αναζήτησης"
+
+#: libraryofcongress.py:100
+msgid "error.http.general"
+msgstr "Σφάλμα HTTP από τον διακομιστή της Βιβλιοθήκης του Κογκρέσου: {code} {message}"
+

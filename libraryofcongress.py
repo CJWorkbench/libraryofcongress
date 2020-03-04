@@ -4,6 +4,7 @@ from typing import Any, Dict, List
 from urllib.parse import urlencode
 import aiohttp
 import pandas as pd
+from cjwmodule import i18n
 
 
 BaseUrl = 'https://www.loc.gov/search/'
@@ -80,7 +81,7 @@ async def fetch(params):
     q = params['q']
 
     if not q:
-        return (None, 'Missing search phrase')
+        return (None, i18n.trans("badParam.q.missing", 'Missing search phrase'))
 
     facets = []
     if params['partof'] != 'entire_library':
@@ -96,9 +97,10 @@ async def fetch(params):
     try:
         return await _fetch_paginated(q, fa)
     except aiohttp.client_exceptions.ClientResponseError as err:
-        return (
-            'HTTP error from Library of Congress server: %(code)d %(message)s'
-            % {'code': err.code, 'message': err.message}
+        return i18n.trans(
+            "error.http.general",
+            'HTTP error from Library of Congress server: {code} {message}',
+            {'code': err.code, 'message': err.message}
         )
 
 
